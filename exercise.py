@@ -1,3 +1,11 @@
-digits = [0,1,2,3,4,5,6,7,8,9]
-for number in digits:
-    print(number, end= '')
+products_on_sale = ['Chair_Type_1', 'Chair_Type_2', 'Chair_Type_3', 'Chair_Type_4']
+
+
+sale_prices=[100, 120, 135, 150]
+
+quantities=[1000, 1500, 1300]
+
+for chair_type in products_on_sale:
+    for price in sale_prices:
+        for quantity in quantities:
+            print ([chair_type, price*quantity])
